@@ -65,7 +65,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -173,7 +174,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -309,7 +311,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -406,7 +409,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -488,7 +492,9 @@
           "whiteList": {
             "Country": [
               "Japan",
-              "United States"
+              "United States",
+              "Sweden",
+              "Canada"
             ]
           }
         },
@@ -558,6 +564,10 @@
       ],
       "filter": {
         "whiteList": {
+          "Mileage": {
+            "min": 30500,
+            "max": 316001971
+          },
           "Config Type": [
             "Custom",
             "Drift"
@@ -599,7 +609,8 @@
               "Italy",
               "Poland",
               "Germany",
-              "Japan"
+              "Japan",
+              "Sweden"
             ]
           }
         },
@@ -710,7 +721,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -792,24 +804,6 @@
           ]
         },
         "blackList": {
-          "hasLoad": [
-            true
-          ],
-          "Config Type": [
-            "Frame",
-            "Police",
-            "Custom",
-            "Drift",
-            "Race",
-            "Sedan",
-            "joesJunk",
-            "Hardcore",
-            "Powerglow",
-            "Rally"
-          ],
-          "Tags": [
-            "Ambulance"
-          ],
           "Body Style": [
             "ATV",
             "Buggy",
@@ -824,6 +818,24 @@
             "Shooting Brake",
             "Wagon",
             "Pickup"
+          ],
+          "Config Type": [
+            "Frame",
+            "Police",
+            "Custom",
+            "Drift",
+            "Race",
+            "Sedan",
+            "joesJunk",
+            "Hardcore",
+            "Powerglow",
+            "Rally"
+          ],
+          "hasLoad": [
+            true
+          ],
+          "Tags": [
+            "Ambulance"
           ]
         }
       },
@@ -835,7 +847,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -854,7 +867,9 @@
         }
       ],
       "subFilterNames": [
-        "Sub-Filter 1"
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
       ],
       "fees": 1549,
       "containsStarterVehicles": false,
@@ -903,7 +918,11 @@
         }
       ],
       "filter": {
-        "whiteList": {},
+        "whiteList": {
+          "Config Type": [
+            "Police"
+          ]
+        },
         "blackList": {
           "Type": [
             "Trailer"
@@ -931,7 +950,8 @@
               "France",
               "Italy",
               "Poland",
-              "Germany"
+              "Germany",
+              "Sweden"
             ]
           }
         },
@@ -950,7 +970,9 @@
         }
       ],
       "subFilterNames": [
-        "Sub-Filter 1"
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
       ],
       "fees": 1049,
       "containsStarterVehicles": false,
@@ -1027,6 +1049,9 @@
             ]
           }
         }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
       ],
       "fees": 5000,
       "containsStarterVehicles": false,
