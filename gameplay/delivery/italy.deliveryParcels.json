@@ -488,7 +488,7 @@
     "weight": [
       250,
       360,
-      500
+      400
     ],
     "modChance": {
       "large": 0.35
@@ -544,9 +544,9 @@
     ],
     "offerDuration": 360,
     "weight": [
-      500,
-      600,
-      750
+      250,
+      400,
+      500
     ],
     "modChance": {
       "large": 0
