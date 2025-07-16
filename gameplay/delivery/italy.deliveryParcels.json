@@ -486,9 +486,9 @@
     ],
     "offerDuration": 360,
     "weight": [
+      200,
       250,
-      360,
-      400
+      300
     ],
     "modChance": {
       "large": 0.35
@@ -545,8 +545,8 @@
     "offerDuration": 360,
     "weight": [
       250,
-      400,
-      500
+      300,
+      400
     ],
     "modChance": {
       "large": 0
@@ -567,28 +567,16 @@
     "worth": 0.5,
     "generationChance": 0.3,
     "duplicationChance": [
-      0,
-      0,
-      0,
-      1.0,
-      0,
-      0,
-      0,
-      0.25,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      1,
+      0.5,
+      0.2,
+      0.1
     ],
     "offerDuration": 360,
     "weight": [
-      900,
-      1000,
-      1200
+      600,
+      800,
+      1000
     ],
     "modChance": {
       "large": 0
