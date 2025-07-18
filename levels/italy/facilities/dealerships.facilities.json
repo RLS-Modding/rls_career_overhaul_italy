@@ -1,859 +1,1530 @@
 {
-  "dealerships":[
+  "dealerships": [
     {
-      "id":"claudioAuto",
-      "name":"Claudio Auto",
-      "description":"New and used vehicles for a fair price.",
+      "id": "claudioAuto",
+      "name": "Claudio New and Used",
+      "description": "New and used vehicles for a fair price.",
+      "preview": "Claudio_Auto_Sales.png",
       "stock": 20,
-      "range": [0.7, 0.90, 1.05, 1.1],
-      "associatedOrganization":"",
-      "preview":"Claudio_Auto_Sales.png",
-      "doors":[["claudioAuto_area","claudioAuto_icon", 30]],
-      "parkingSpotNames":["claudioAuto1","claudioAuto2"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "range": [
+        0.7,
+        0.9,
+        1.05,
+        1.1
       ],
-
-
-        "filter": {
-          "whiteList":{"Type":["Car"],"Years": {"min":2007, "max":2025}, "Mileage":{"min":9000, "max":70000000},"Config Type":["Factory"],"Value":{"max":65000},"Brand":["Cherrier","Autobello","ETK"]},
-          "blackList":{"Type":["Trailer","Truck"], "Config Type":["Police","Frame","Race"],"Configuration":["Drag","Drag (A)","Drag (M)","Drag (DCT)","Drag (Sequential","Drift (Sequential","Drift (DCT)","Drift (M)","Drift (A)","Drift","Rally"]}
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "claudioAuto_area",
+          "claudioAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "claudioAuto1",
+        "claudioAuto2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 9000,
+            "max": 70000000
+          },
+          "Years": {
+            "min": 1980,
+            "max": 2025
+          },
+          "Type": [
+            "Car"
+          ],
+          "Config Type": [
+            "Factory"
+          ],
+          "Value": {}
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Truck"
+          ],
+          "Body Style": [
+            "ATV"
+          ]
+        }
       },
       "subFilters": [
         {
-            "probability":3,
-            "whiteList":{"Brand":["Bruckell"]}
-        },  
-        {
-            "probability":3,
-            "whiteList":{"Brand":["Burnside"]}
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
         },
-      
         {
-            "probability":3,
-            "whiteList":{"Brand":["Gavril"]}
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
         },
-      
         {
-            "probability":3,
-            "whiteList":{"Brand":["Soliad"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["ETK"]}
-        },
-      
-        {
-            "probability":2,
-            "whiteList":{"Brand":["Cherrier"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Autobello"]}
-        },
-      
-        {
-            "probability":2,
-            "whiteList":{"Brand":["Ibishu"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Hirochi"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Arima"]}
+          "probability": 1,
+          "whiteList": {}
         }
-      
-        ],
-
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 1 (Copy)",
+        "Sub-Filter 1 (Copy) (Copy)"
+      ],
       "fees": 1749,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "Claudio"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Claudio"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"garantitoAuto",
-      "name":"Garantito Auto",
-      "description":"Used larger vehicles",
+      "id": "garantitoAuto",
+      "name": "Garantito Utility Sales",
+      "description": "Used larger vehicles for everyday needs",
+      "preview": "Garantito_Auto.png",
       "stock": 20,
-      "range": [0.8, 0.90, 1.10, 1.3],
-      "associatedOrganization":"",
-      "preview":"Garantito_Auto.png",
-      "doors":[["garantitoAuto_area","garantitoAuto_icon", 30]],
-      "parkingSpotNames":["garantitoAutoParking1","garantitoAutoParking2"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "range": [
+        0.8,
+        0.9,
+        1.1,
+        1.3
       ],
-
-      "filter":{
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Body Style":["Van","Minivan","SUV","Box Truck"], "Config Type":["Factory"]},
-        "blackList":{"hasLoad":[true],"Config Type":["Frame"],"Type":["Trailer"],"Tags":["Ambulance"],"Body Style":["Ambulance","Pickup"]}
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "garantitoAuto_area",
+          "garantitoAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "garantitoAutoParking1",
+        "garantitoAutoParking2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 8800028,
+            "max": 264000845
+          },
+          "Config Type": [
+            "Factory",
+            "Service"
+          ],
+          "Body Style": [
+            "Van",
+            "Minivan",
+            "SUV",
+            "Box Truck",
+            "Wagon"
+          ]
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "hasLoad": [
+            true
+          ],
+          "Tags": [
+            "Ambulance"
+          ]
+        }
       },
       "subFilters": [
         {
-            "probability":1,
-            "whiteList":{"Brand":["ETK"]}
+          "probability": 5,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
         },
-      
         {
-            "probability":2,
-            "whiteList":{"Brand":["Cherrier"]}
+          "probability": 2,
+          "whiteList": {
+            "Country": [
+              "United States"
+            ]
+          }
         },
-      
         {
-            "probability":1,
-            "whiteList":{"Brand":["Autobello"]}
-        },
-      
-        {
-            "probability":2,
-            "whiteList":{"Brand":["Ibishu"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Hirochi"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Arima"]}
+          "probability": 3,
+          "whiteList": {
+            "Country": [
+              "Japan"
+            ]
+          }
         }
-        ],
-
-
-
-
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
       "fees": 949,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "Garantito"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Garantito"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"temerariaAuto",
-      "name":"Temeraria Auto",
-      "description":"The Finest new and used vehicles in Italy",
-      "stock": 20,
-      "range": [0.75, 0.90, 1.05, 1.1],
-      "associatedOrganization":"",
-      "preview":"Temeraria_Auto.png",
-      "doors":[["temerariaAuto_area","temerariaAuto_icon", 30]],
-      "parkingSpotNames":["temerariaAutoParking1","temerariaAutoParking2"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "id": "temerariaAuto",
+      "name": "Temeraria",
+      "description": "The Finest new and used vehicles in Italy",
+      "preview": "Temeraria_Auto.png",
+      "stock": 15,
+      "range": [
+        0.75,
+        0.9,
+        1.05,
+        1.1
       ],
-
-      "filter":{
-        "whiteList":{"Type":["Car"],"Brand":["Cherrier","Autobello","ETK","Civetta"],"Config Type":["Factory"]},
-        "blackList":{"Type":["Trailer","Truck"], "Config Type":["Police","Frame","Race"],"Configuration":["Drag","Drag (A)","Drag (M)","Drag (DCT)","Drag (Sequential","Drift (Sequential","Drift (DCT)","Drift (M)","Drift (A)","Drift","Rally"]}
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "temerariaAuto_area",
+          "temerariaAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "temerariaAutoParking1",
+        "temerariaAutoParking2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Type": [
+            "Car"
+          ],
+          "Config Type": [
+            "Factory"
+          ],
+          "Value": {
+            "min": 70000,
+            "max": 5500000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Truck"
+          ],
+          "Body Style": [
+            "Buggy",
+            "ATV",
+            "Ambulance",
+            "Box Truck",
+            "Bus",
+            "Chassis Cab",
+            "Dump Truck",
+            "Fifth Wheel Truck",
+            "Fifth Wheel Truck ",
+            "Flatbed",
+            "JATO truck",
+            "Logging Truck",
+            "Minivan",
+            "Mixer Truck",
+            "Pickup",
+            "Van",
+            "Semi Truck",
+            "Tanker Truck"
+          ],
+          "Configuration": [
+            "Drag",
+            "Drag (A)",
+            "Drag (M)",
+            "Drag (DCT)",
+            "Drag (Sequential",
+            "Drift (Sequential",
+            "Drift (DCT)",
+            "Drift (M)",
+            "Drift (A)",
+            "Drift",
+            "Rally"
+          ]
+        }
       },
-
       "subFilters": [
         {
-          "probability":1,
-          "whiteList":{"Years": {"min":1950, "max":1973},"Mileage":{"min":2500000, "max":132000422},"Value":{"min":120000}}
-          },
-          {
-          "probability":2,
-          "whiteList":{"Years": {"min":1973, "max":2010},"Mileage":{"min":2500000, "max":132000422},"Value":{"min":120000}}
-          },
-          {
-          "probability":3,
-          "whiteList":{"Years": {"min":2010},"Mileage":{"min":250000, "max":18000000},"Value":{"min":120000}}
-          },
-          {
-          "probability":4,
-          "whiteList":{"Years": {"min":2017},"Mileage":{"min":10000, "max":50000},"Value":{"min":120000}}
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
           }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {}
+        }
       ],
-
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
       "fees": 2749,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"FBXAuto",
-      "name":"FBX Auto Sales",
-      "description":"Heavily used vehicles",
-      "stock": 15,
-      "range": [0.5, 0.70, 1.1, 1.4],
-      "associatedOrganization":"",
-      "preview":"FBX_Auto_Sales.png",
-      "doors":[["FBXAuto_area","FBXAuto_icon", 30]],
-      "parkingSpotNames":["FBXAutoParking1"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "id": "FBXAuto",
+      "name": "FBX Scraps",
+      "description": "One mans junk...",
+      "preview": "FBX_Auto_Sales.png",
+      "stock": 10,
+      "range": [
+        0.5,
+        0.7,
+        1.1,
+        1.4
       ],
-
-"filter": {
-"whiteList":{"Mileage":{"min":305000000, "max":616001971},"Value":{"max":50000}},
-"blackList":{"Body Style":["ATV","Buggy","Semi Truck"], "Config Type":["Police","Service","Frame"]}
-},
-"subFilters": [
-  {
-      "probability":3,
-      "whiteList":{"Brand":["ETK"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Cherrier"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Autobello"]}
-  },
-
-  {
-      "probability":2,
-      "whiteList":{"Brand":["Ibishu"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Hirochi"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Arima"]}
-  },
-
-
-  ],
-
-      "fees": 249,
-      "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "FBX"
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    },
-    {
-      "id":"portinoAuto",
-      "name":"Portino Auto Sales",
-      "description":"Used high end vehicles",
-      "stock": 15,
-      "associatedOrganization":"",
-      "preview":"Portino_Auto_Sales.png",
-      "doors":[["portinoAuto_area","portinoAuto_icon", 30]],
-      "parkingSpotNames":["portinoAutoParking1"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "FBXAuto_area",
+          "FBXAuto_icon",
+          30
+        ]
       ],
-
-"filter": {
-"whiteList":{"Mileage":{"min":305000000, "max":616001971},"Value":{"min":120000}},
-"blackList":{"Body Style":["ATV","Buggy","Semi Truck"], "Config Type":["Police","Service","Frame"]}
-},
-"subFilters": [
-  {
-      "probability":3,
-      "whiteList":{"Brand":["ETK"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Cherrier"]}
-  },
-
-  {
-    "probability":3,
-    "whiteList":{"Brand":["Civetta"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Autobello"]}
-  },
-
-  {
-      "probability":2,
-      "whiteList":{"Brand":["Ibishu"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Hirochi"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Arima"]}
-  }
-
-
-  ],
-
-      "fees": 949,
-      "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    },
-    {
-      "id":"biancoAuto",
-      "name":"Bianco Auto Sales",
-      "description":"Custom vehicles of Italy",
-      "stock": 20,
-      "associatedOrganization":"",
-      "preview":"Bianco_Auto_Sales.png",
-      "doors":[["biancoAuto_area","biancoAuto_icon", 30]],
-      "parkingSpotNames":["biancoAutoParking1"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "parkingSpotNames": [
+        "FBXAutoParking1"
       ],
-
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
       "filter": {
-        "blackList":{"Type":["Trailer"], "Config Type":["Police","Service","Frame"],"Body Style":["Semi Truck","Bus", "Tanker Truck", "Flatbed Truck","Box Truck","Truck","Fifth Wheel Truck", "Chassis Cab","Dump Truck","Flatbed","Mixer Truck","Logging Truck"]}
+        "whiteList": {
+          "Mileage": {
+            "min": 305000000,
+            "max": 616001971
+          },
+          "Config Type": [
+            "Frame",
+            "joesJunk"
+          ],
+          "Value": {}
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ]
+        }
       },
       "subFilters": [
         {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Bruckell"]}
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
         },
         {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Burnside"]}
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan"
+            ]
+          }
         },
         {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Body Style":["Pickup"]}
-        },
-        {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Type":["Car"]}
-        },
-        {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Soliad"]}
-        },
-        {
-        "probability":2,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Civetta"]}
-        },
-        {
-        "probability":3,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["ETK"]}
-        },
-        {
-        "probability":3,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Cherrier"]}
-        },
-        {
-        "probability":3,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Autobello"]}
-        },
-        {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["FPU"]}
-        },
-        {
-        "probability":2,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Ibishu"]}
-        },
-        {
-        "probability":2,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Hirochi"]}
-        },
-        {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Arima"]}
+          "probability": 1,
+          "whiteList": {}
         }
       ],
-
-
-      "fees": 749,
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2"
+      ],
+      "fees": 149,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "FBX"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"carlinoAuto",
-      "name":"Carlino Auto Sales",
-      "description":"Moderately used mid-range vehicles",
-      "stock": 15,
-      "associatedOrganization":"",
-      "preview":"Carlino_Auto_Sales.png",
-      "doors":[["carlinoAuto_area","carlinoAuto_icon", 30]],
-      "parkingSpotNames":["carlinoAutoParking1"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "id": "portinoAuto",
+      "name": "Portino's Imports",
+      "description": "Imported from who knows where",
+      "preview": "Portino_Auto_Sales.png",
+      "stock": 25,
+      "range": [
+        0.8,
+        0.9,
+        1.25,
+        1.5
       ],
-
-"filter": {
-"whiteList":{"Mileage":{"min":305000000, "max":616001971},"Value":{"min":50000, "max":130000}},
-"blackList":{"Body Style":["ATV","Buggy","Semi Truck"], "Config Type":["Police","Service","Frame"]}
-},
-"subFilters": [
-  {
-      "probability":3,
-      "whiteList":{"Brand":["ETK"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Cherrier"]}
-  },
-
-  {
-    "probability":3,
-    "whiteList":{"Brand":["Civetta"]}
-  },
-
-  {
-      "probability":3,
-      "whiteList":{"Brand":["Autobello"]}
-  },
-
-  {
-      "probability":2,
-      "whiteList":{"Brand":["Ibishu"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Hirochi"]}
-  },
-
-  {
-      "probability":1,
-      "whiteList":{"Brand":["Arima"]}
-  }
-
-
-  ],
-
-
-      "fees": 749,
-      "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    },
-    {
-      "id":"portoAuto",
-      "name":"Commerciale Auto Sales",
-      "description":"Commercial vehicles for sale",
-      "stock": 15,
-      "associatedOrganization":"",
-      "preview":"Porto_Commerciale_Auto_Sales.png",
-      "doors":[["portoAuto_area","portoAuto_icon", 30]],
-      "parkingSpotNames":["portoAutoParking1","portoAutoParking2"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "portinoAuto_area",
+          "portinoAuto_icon",
+          30
+        ]
       ],
-
-      "filter":{
-        "whiteList":{"Mileage":{"min":1760006, "max":970000000}},
-        "blackList":{"hasLoad":[true],"Config Type":["Frame","Police"],"Tags":["Ambulance"],"Body Style":["Ambulance","Pickup"]}
+      "parkingSpotNames": [
+        "portinoAutoParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ]
+        }
       },
-    
       "subFilters": [
         {
-          "whiteList":{"Body Style":["Semi Truck", "Tanker Truck", "Flatbed Truck", "Fifth Wheel Truck", "Chassis Cab","Truck","Forklift"]},
-          "probability":2
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States",
+              "Sweden",
+              "Canada"
+            ]
+          }
         },
         {
-          "whiteList":{"Type":["Trailer"],"Mileage":{"min":1613, "max":161290323}},
-          "probability":3
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
         },
         {
-          "whiteList":{"Body Style":["Bus"]},
-          "probability":1
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
         }
-    
       ],
-
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
+      "fees": 2449,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.1089999961853
+    },
+    {
+      "id": "biancoAuto",
+      "name": "Bianco's Customs",
+      "description": "Custom vehicles!",
+      "preview": "Bianco_Auto_Sales.png",
+      "stock": 15,
+      "range": [
+        0.8,
+        0.9,
+        1.25,
+        1.5
+      ],
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "biancoAuto_area",
+          "biancoAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "biancoAutoParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 30500,
+            "max": 316001971
+          },
+          "Config Type": [
+            "Custom",
+            "Drift"
+          ]
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Body Style": [
+            "Semi Truck",
+            "Bus",
+            "Tanker Truck",
+            "Flatbed Truck",
+            "Box Truck",
+            "Truck",
+            "Fifth Wheel Truck",
+            "Chassis Cab",
+            "Dump Truck",
+            "Flatbed",
+            "Mixer Truck",
+            "Logging Truck",
+            "ATV",
+            "Buggy",
+            "Fifth Wheel Truck ",
+            "JATO truck",
+            "Pickup",
+            "Ambulance",
+            "Armored"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Japan",
+              "Sweden"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "United States"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {}
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2"
+      ],
+      "fees": 749,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "carlinoAuto",
+      "name": "Carlino Customer Deals",
+      "description": "Customer states...",
+      "preview": "Carlino_Auto_Sales.png",
+      "stock": 15,
+      "range": [
+        0.8,
+        0.9,
+        1.25,
+        1.5
+      ],
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "carlinoAuto_area",
+          "carlinoAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "carlinoAutoParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 305000000,
+            "max": 616001971
+          },
+          "Years": {
+            "min": 1975.9000244141,
+            "max": 2227
+          },
+          "Value": {
+            "min": 0,
+            "max": 130000
+          }
+        },
+        "blackList": {
+          "Body Style": [
+            "ATV",
+            "Buggy",
+            "Semi Truck"
+          ],
+          "Config Type": [
+            "Police",
+            "Service",
+            "Frame",
+            "joesJunk",
+            "Race",
+            "Rally",
+            "Drift",
+            "Powerglow",
+            "Hardcore",
+            "Sedan"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {}
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2"
+      ],
+      "fees": 749,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "portoAuto",
+      "name": "Commerciale Auto Sales",
+      "description": "Commercial vehicles for sale",
+      "preview": "Porto_Commerciale_Auto_Sales.png",
+      "stock": 15,
+      "range": [
+        0.8,
+        0.9,
+        1.25,
+        1.5
+      ],
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "portoAuto_area",
+          "portoAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "portoAutoParking1",
+        "portoAutoParking2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 1760006,
+            "max": 970000000
+          },
+          "Type": [
+            "Truck",
+            "Trailer"
+          ]
+        },
+        "blackList": {
+          "Body Style": [
+            "ATV",
+            "Buggy",
+            "Coupe",
+            "JATO truck",
+            "Hatchback",
+            "Liftback",
+            "Minivan",
+            "Roadster",
+            "Sedan",
+            "SUV",
+            "Shooting Brake",
+            "Wagon",
+            "Pickup"
+          ],
+          "Config Type": [
+            "Frame",
+            "Police",
+            "Custom",
+            "Drift",
+            "Race",
+            "Sedan",
+            "joesJunk",
+            "Hardcore",
+            "Powerglow",
+            "Rally"
+          ],
+          "hasLoad": [
+            true
+          ],
+          "Tags": [
+            "Ambulance"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {}
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
       "fees": 1549,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"poliziaAuto",
-      "name":"Polizia Auto Sales",
-      "description":"Registered police cars",
+      "id": "poliziaAuto",
+      "name": "Polizia Auto Sales",
+      "description": "Registered police cars",
+      "preview": "Polizia_Auto_Sales.png",
       "stock": 10,
-      "associatedOrganization":"",
-      "preview":"Polizia_Auto_Sales.png",
-      "doors":[["poliziaAuto_area","poliziaAuto_icon", 30]],
-      "parkingSpotNames":["poliziaAutoParking1"],
-      "activityAcceptProps":[
-        {"keyLabel":"New & Used Vehicles"}
+      "range": [
+        0.8,
+        0.9,
+        1.25,
+        1.5
       ],
-    "filter": {
-      "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
-    },
-    "subFilters": [
-      {
-        "probability":1,
-        "whiteList":{"Mileage":{"min":2000, "max":88000282}, "Config Type":["Police"],"Brand":["Cherrier","Autobello","ETK","Civetta"]}
-      }
-    
+      "associatedOrganization": "",
+      "doors": [
+        [
+          "poliziaAuto_area",
+          "poliziaAuto_icon",
+          30
+        ]
       ],
-
+      "parkingSpotNames": [
+        "poliziaAutoParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Config Type": [
+            "Police"
+          ]
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame",
+            "Drift",
+            "Race",
+            "Sedan",
+            "joesJunk",
+            "Service",
+            "Rally",
+            "Powerglow",
+            "Hardcore",
+            "Factory",
+            "Custom"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany",
+              "Sweden"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {}
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
       "fees": 1049,
       "containsStarterVehicles": false,
-      "testDrive" : {
-        "abandonFees" : 100,
-        "timeLimit" : 120,
-        "licencePlate" : "belasco"
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "belasco"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
+      }
     },
     {
-      "id":"ArimaDealership",
-      "name":"Arima Online Dealership",
-      "description":"Arima Online Dealership",
-      "preview":"JDM_Port_Dealer_TB.png",
+      "id": "ArimaDealership",
+      "name": "Arima Online Dealership",
+      "description": "Arima Online Dealership",
+      "preview": "JDM_Port_Dealer_TB.png",
       "stock": 10,
-      "range": [0.8, 0.9, 1.15, 1.3],
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
       ],
       "filter": {
-        "blackList":{"Type":["Trailer"],"Body Style":["Buggy"],"Config Type":["Frame"]}
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ],
+          "Body Style": [
+            "Buggy"
+          ]
+        }
       },
       "subFilters": [
         {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Arima"]}
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Arima"
+            ]
+          }
         }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
       ],
       "fees": 5000,
       "containsStarterVehicles": false,
       "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : "ARIMA"
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "ARIMA"
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    }, 
-    {
-      "id":"AutobelloDealership",
-      "name":"Autobello Online Dealership",
-      "description":"Autobello Online Dealership",
-      "preview":"JDM_Port_Dealer_TB.png",
-      "stock": 10,
-      "range": [0.8, 0.9, 1.15, 1.3],
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
-      ],
-      "filter": {
-        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
-      },
-      "subFilters": [
-        {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Autobello"]}
-        }
-      ],
-      "fees": 5000,
-      "containsStarterVehicles": false,
-      "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    }, 
-    {
-      "id":"CherrierDealership",
-      "name":"Cherrier Online Dealership",
-      "description":"Cherrier Online Dealership",
-      "stock": 10,
-      "range": [0.8, 0.9, 1.15, 1.3],
-      "preview":"ETK_Dealer_TB.png",
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
-      ],
-      "filter": {
-        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
-      },
-      "subFilters": [
-        {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Cherrier"]}
-        }
-      ],
-      "fees": 5000,
-      "containsStarterVehicles": false,
-      "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07
     },
     {
-      "id":"CivettaDealership",
-      "name":"Civetta Online Dealership",
-      "description":"Civetta Online Dealership",
+      "id": "AutobelloDealership",
+      "name": "Autobello Online Dealership",
+      "description": "Autobello Online Dealership",
+      "preview": "JDM_Port_Dealer_TB.png",
       "stock": 10,
-      "range": [0.8, 0.95, 1.15, 1.3],
-      "preview":"Civetta_Dealer_TB.png",
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
       ],
       "filter": {
-        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
       },
       "subFilters": [
         {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Civetta"]}
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Autobello"
+            ]
+          }
         }
       ],
       "fees": 5000,
       "containsStarterVehicles": false,
       "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round"
     },
     {
-      "id":"ETKDealership",
-      "name":"ETK Online Dealership",
-      "description":"ETK Online Dealership",
-      "preview":"ETK_Dealer_TB.png",
-      "range": [0.8, 0.95, 1.15, 1.3],
+      "id": "CherrierDealership",
+      "name": "Cherrier Online Dealership",
+      "description": "Cherrier Online Dealership",
+      "preview": "ETK_Dealer_TB.png",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Cherrier"
+            ]
+          }
+        }
+      ],
+      "fees": 5000,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07
+    },
+    {
+      "id": "CivettaDealership",
+      "name": "Civetta Online Dealership",
+      "description": "Civetta Online Dealership",
+      "preview": "Civetta_Dealer_TB.png",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.95,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Civetta"
+            ]
+          }
+        }
+      ],
+      "fees": 5000,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round"
+    },
+    {
+      "id": "ETKDealership",
+      "name": "ETK Online Dealership",
+      "description": "ETK Online Dealership",
+      "preview": "ETK_Dealer_TB.png",
       "stock": 20,
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
+      "range": [
+        0.8,
+        0.95,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
       ],
       "filter": {
-        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
       },
       "subFilters": [
         {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["ETK"]}
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "ETK"
+            ]
+          }
         }
       ],
       "fees": 5000,
       "containsStarterVehicles": false,
       "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
       },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    },   
-    {
-      "id":"HirochiDealership",
-      "name":"Hirochi Online Dealership",
-      "description":"Hirochi Online Dealership",
-      "preview":"JDM_Port_Dealer_TB.png",
-      "stock": 10,
-      "range": [0.8, 0.9, 1.15, 1.3],
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
-      ],
-      "filter": {
-        "blackList":{"Type":["Trailer"],"Body Style":["Buggy"],"Config Type":["Frame"]}
-      },
-      "subFilters": [
-        {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Hirochi"]}
-        }
-      ],
-      "fees": 5000,
-      "containsStarterVehicles": false,
-      "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
-    }, 
-    {
-      "id":"IbishuDealership",
-      "name":"Ibishu Online Dealership",
-      "description":"Ibishu Online Dealership",
-      "preview":"JDM_Port_Dealer_TB.png",
-      "stock": 10,
-      "range": [0.8, 0.9, 1.15, 1.3],
-      "doors":[["","", 30]],
-      "parkingSpotNames":["onlineParking"],
-      "activityAcceptProps":[
-        {"keyLabel":"New Vehicles"}
-      ],
-      "filter": {
-        "blackList":{"Type":["Trailer"],"Config Type":["Frame"]}
-      },
-      "subFilters": [
-        {
-          "probability":1,
-          "whiteList":{"Mileage":{"min":4800, "max":16093},"Config Type":["Factory"],"Brand":["Ibishu"]}
-        }
-      ],
-      "fees": 5000,
-      "containsStarterVehicles": false,
-      "testDrive": {
-        "abandonFees" : 250,
-        "timeLimit" : 120,
-        "licencePlate" : ""
-      },
-      "iconOffsetHeight":1.0,
-      "iconLift":0.25,
-      "playModeIconName":"poi_entrance_round"
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round"
     },
-
-
+    {
+      "id": "HirochiDealership",
+      "name": "Hirochi Online Dealership",
+      "description": "Hirochi Online Dealership",
+      "preview": "JDM_Port_Dealer_TB.png",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ],
+          "Body Style": [
+            "Buggy"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Hirochi"
+            ]
+          }
+        }
+      ],
+      "fees": 5000,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07
+    },
+    {
+      "id": "IbishuDealership",
+      "name": "Ibishu Online Dealership",
+      "description": "Ibishu Online Dealership",
+      "preview": "JDM_Port_Dealer_TB.png",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "",
+          "",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "onlineParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {},
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Config Type": [
+              "Factory"
+            ],
+            "Brand": [
+              "Ibishu"
+            ]
+          }
+        }
+      ],
+      "fees": 5000,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07
+    }
   ],
-  "privateSellers":[
+  "privateSellers": [
     {
       "id": "private",
       "name": "Private",
       "stock": 30,
       "filter": {
-        "whiteList":{"Mileage":{"min":25000000, "max":380000000}, "Value":{"min":450}},
-        "blackList":{"Type":["Trailer", "Semi Truck"]}
+        "whiteList": {
+          "Mileage": {
+            "min": 25000000,
+            "max": 380000000
+          },
+          "Value": {}
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck"
+          ]
+        }
       },
       "subFilters": [
         {
-            "probability":1,
-            "whiteList":{"Brand":["Bruckell"]}
-        },  
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Burnside"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Gavril"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Soliad"]}
-        },
-      
-        {
-            "probability":3,
-            "whiteList":{"Brand":["ETK"]}
-        },
-      
-        {
-            "probability":3,
-            "whiteList":{"Brand":["Cherrier"]}
-        },
-      
-        {
-            "probability":3,
-            "whiteList":{"Brand":["Autobello"]}
-        },
-      
-        {
-            "probability":2,
-            "whiteList":{"Brand":["Ibishu"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Hirochi"]}
-        },
-      
-        {
-            "probability":1,
-            "whiteList":{"Brand":["Arima"]}
+          "probability": 7,
+          "whiteList": {
+            "Country": [
+              "France",
+              "Italy",
+              "Poland",
+              "Germany"
+            ]
+          }
         },
         {
-          "probability":2,
-          "whiteList":{"Brand":["Civetta"]}
-      },
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "United States"
+            ]
+          }
+        },
         {
-          "probability":2,
-          "whiteList":{"Years": {"min":1901, "max":2025}}
+          "probability": 1,
+          "whiteList": {}
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
       }
-      
-        ]
     }
-
   ]
 }
-
-
-

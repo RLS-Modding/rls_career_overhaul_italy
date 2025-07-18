@@ -92,7 +92,7 @@
     },
     "outroDrift": {
       "bestTime": 120,
-      "driftGoal": 10000,
+      "driftGoal": 100000,
       "reward": 2000,
       "checkpointRoad": "outroDrift",
       "label": "Outro Drift Route",
@@ -104,7 +104,7 @@
     },
     "outroDriftR": {
       "bestTime": 120,
-      "driftGoal": 10000,
+      "driftGoal": 100000,
       "reward": 2000,
       "reverse": true,
       "checkpointRoad": "outroDrift",
@@ -117,7 +117,7 @@
     },
     "castellettoDrift": {
       "bestTime": 260,
-      "driftGoal": 8000,
+      "driftGoal": 75000,
       "reward": 2500,
       "checkpointRoad": "castellettoDrift",
       "label": "Castelletto Drift",
@@ -129,7 +129,7 @@
     },
     "castellettoDriftR": {
       "bestTime": 260,
-      "driftGoal": 8000,
+      "driftGoal": 75000,
       "reward": 2500,
       "reverse": true,
       "checkpointRoad": "castellettoDrift",

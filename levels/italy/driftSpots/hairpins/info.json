@@ -1,0 +1,30 @@
+{
+  "name":"The hairpins",
+  "objectives":[
+    {
+      "id":"bronze",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":10000
+    },
+    {
+      "id":"silver",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":35000
+    },
+    {
+      "id":"gold",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":80000
+    }
+  ],
+  "unlock":{}
+}

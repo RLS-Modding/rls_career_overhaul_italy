@@ -1,0 +1,30 @@
+{
+  "name":"Oversteer alley",
+  "objectives":[
+    {
+      "id":"bronze",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":5000
+    },
+    {
+      "id":"silver",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":10000
+    },
+    {
+      "id":"gold",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":25000
+    }
+  ],
+  "unlock":{}
+}
